@@ -60,7 +60,7 @@ public class Mecanica : MonoBehaviour
 
         pPos.x += V * Time.deltaTime;
 
-        pPos.x = Mathf.Clamp(pPos.x, -.5f, .5f);
+        pPos.x = Mathf.Clamp(pPos.x, -24f, 24f);
         peso.transform.position = piso.transform.TransformPoint(pPos);
         peso.transform.up = piso.transform.up;
         print(A);
